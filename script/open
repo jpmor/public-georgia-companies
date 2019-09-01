@@ -1,4 +1,22 @@
 #!/bin/bash
 
-FVURL="https://finviz.com/bubbles.ashx\?x=ticker&y=perfYtd&size=marketCap&color=sector&idx=any&tickers="
-open "${FVURL}$(awk 1 ORS=' ' $1)"
+LIST=$1
+
+# Chart Preferences
+x="ticker"
+y="perfYtd"
+size="marketCap"
+color="sector"
+idx="any"
+
+# Build Finviz URL
+URL="https://finviz.com/bubbles.ashx/?\
+x=$x&\
+y=$y&\
+size=$size&\
+color=$color&\
+idx=$idx&\
+tickers=$(awk 1 ORS=' ' $LIST)"
+
+# Open in Browser
+open "$URL"
