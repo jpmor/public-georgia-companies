@@ -1,0 +1,4 @@
+#!/bin/bash
+
+FVURL="https://finviz.com/bubbles.ashx\?x=ticker&y=perfYtd&size=marketCap&color=sector&idx=any&tickers="
+open "${FVURL}$(awk 1 ORS=' ' $1)"

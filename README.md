@@ -1,11 +1,8 @@
 
-## Usage
+## Use
 
 https://finviz.com is great for comparing companies, and free.
 
-Run the following script:
+Feed `script/open` a file newline delimited company tickers to open the list in bubble view.
 
-```
-export FVURL="https://finviz.com/bubbles.ashx\?x=ticker&y=perfYtd&size=marketCap&color=sector&idx=any&tickers=";
-open "${FVURL}$(awk 1 ORS=' ' symbols.txt)"
-```
+`lists/` has watchlists I'm interested in.
