@@ -3,8 +3,8 @@
 LIST=$1
 
 # Chart Preferences
-x="ticker"
-y="perfYtd"
+x="income"
+y="PS"
 size="marketCap"
 color="sector"
 idx="any"

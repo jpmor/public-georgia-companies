@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Sort the symbols in each list alphabetically
+find lists/* | xargs -I {} sort -o {} {}
