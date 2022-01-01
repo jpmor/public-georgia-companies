@@ -10,7 +10,7 @@ color="sector"
 idx="any"
 
 # Build Finviz URL
-URL="https://finviz.com/bubbles.ashx/?\
+URL="https://finviz.com/bubbles.ashx?\
 x=$x&\
 y=$y&\
 size=$size&\
