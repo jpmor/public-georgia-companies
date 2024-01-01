@@ -6,7 +6,7 @@ LIST=$1
 x="income"
 y="PS"
 size="marketCap"
-color="sector"
+color="perf52w"
 idx="any"
 
 # Build Finviz URL
